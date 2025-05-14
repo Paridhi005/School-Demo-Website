@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../SRC/design.css">
+        <title>
+            Teacher Registration Form
+        </title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">TEACHER REGISTRATION FORM</h1>
+        <form method="post">
+            <div style="background: pink; color: darkblue; padding:50px;">
+            Name: <input type="text" name="name" placeholder="first name" required autocomplete autofocus><br><br>
+            Surname: <input type="text" name="surname" placeholder="last name" required><br><br>
+            Gender: <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Other">Other <br><br>
+            Department: <select name="department" required>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Mathematics">Mathematics</option>   
+            <option value="Commerce">Commerce</option>
+            <option value="Biology">Biology</option> 
+            </select><br><br>
+            </div>
+            <input type="image" src="../RESOURCES/submit.png" height="50px" width="100px" alt="Submit">
+            &nbsp;
+            <input type="image" src="../RESOURCES/reset.jpeg" height="50px" width="100px" alt="Reset">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../SRC/design.css">
+        <title>
+            Student Registration Form
+        </title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">STUDENT REGISTRATION FORM</h1>
+        <form method="post">
+            <div style="background: url(../RESOURCES/study.png),fixed, center center; background-size: cover; color: aliceblue; padding:50px;">
+            Name: <input type="text" name="name" placeholder="first name" required><br><br>
+            Surname: <input type="text" name="surname" placeholder="last name" required><br><br>
+            Date Of Birth: <input type="date" name="dob" required><br><br>
+            Aadhaar Number: <input type="number" name="aadhaar" placeholder="1111 1111 1111" maxlength="12" min="1" required><br><br>
+            Email: <input type="email" name="email"><br><br>
+            Contact Number: <input type="tel" name="contact" placeholder="1234567890" maxlength="10" required><br><br>
+            Address: <textarea name="address" placeholder="Enter your address" rows="3" cols="50" required>Type yr address here.</textarea><br><br>
+            Image: <input type="file" name="photo" accept="image/*"><br><br>
+            Upload Marksheet: <input type="file" name="marksheet" accept="application/pdf"><br><br>
+        </div><br><br>
+            
+            <input type="button" onclick="alert('Congratulations!')" value="Click Me!">
+            &nbsp;
+            <input type="image" src="../RESOURCES/submit.png" height="50px" width="100px" alt="Submit">
+            &nbsp;
+            <input type="image" src="../RESOURCES/reset.jpeg" height="50px" width="100px" alt="Reset">
+        </form>
+</html>

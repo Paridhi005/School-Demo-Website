@@ -20,7 +20,7 @@
                 font-size: 60px;
             }
 
-            img
+            #logo
             {
                 width: 200px; 
                 height: auto; 
@@ -94,6 +94,17 @@
 
             @media screen and (max-width: 700px) 
             {
+
+            header 
+            {
+                display:grid;
+                grid-template-columns: 66% 33%;
+                grid-template-rows: 66% 33%;
+                padding: 10px;
+                gap: 100px;
+                height: 80px;
+            }
+
             .column1,.row1,.row2
             {
                 flex:100%;
@@ -107,21 +118,23 @@
             #menu
             {
                 display: block;
-                float:right;
-                height: 50px;
-                width: auto;
-                margin: 10px 4px;
-            }
-
-            header
-            {
-                height:80px
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                height:40px;
+                width:40px;
             }
 
             h1
             {
                 text-align: left; 
                 font-size: 10px;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-top: 20px;
             }
 
             nav
@@ -129,12 +142,14 @@
                 display:none;
             }
 
-            img
+            #logo
             {
                 width: 100px;
-                height: auto; 
-                float: left;
-                margin: 10px 4px;
+                height: auto;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
             }
 
             }
@@ -144,7 +159,7 @@
     <body>
         <header style="background-color: lightblue; padding:5px">
         <div>
-        <img src="../RESOURCES/logo-print.png" alt="Yale University Logo">
+        <img src="../RESOURCES/logo-print.png" alt="Yale University Logo" id="logo">
         <img src="../RESOURCES/menu.png" alt="menu" id="menu">
         <h1> WELCOME TO YALE UNIVERSITY</h1>
         </div>

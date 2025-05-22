@@ -16,6 +16,9 @@
             {
                 text-align: center;
                 font-size: 70px;
+                border: 2px ridge white;
+                border-left: 20px solid rgb(252, 249, 69);
+                background-color: rgba(252, 249, 69, 0.2);
             }
 
             #button
@@ -24,6 +27,7 @@
                 color: white;
                 height: 90px;
                 width: 250px;
+                border: 2px ridge white;
             }
 
             .row
@@ -33,12 +37,20 @@
              flex-wrap: wrap;
             }
 
-            .column
+            #column1, #column2
             {
              flex: 47%;
              max-width: 47%;
              padding: 4px;
              margin: 20px;
+            }
+
+            #column2
+            {
+                border:2px inset yellow;    
+                padding:15px;
+                outline: 3px outset white;
+                outline-offset: 1px;
             }
 
             img
@@ -51,22 +63,22 @@
     <body>
         <div class="row">
 
-            <div class="column">
+            <div id="column1">
                 <img src="../RESOURCES/contactus.jpg" alt="Student image">
             </div>
-            <div class="column">
-            <h1>CONTACT US</h1><br><br>
-            <P><I>Got a question? We'd love to hear you. Send us a message and we'll respond as soon as possible.</I></P><br><br><br><br>
+            <div id="column2">
+            <h1>CONTACT US</h1>
+            <P><I>Got a question? We'd love to hear you. Send us a message and we'll respond as soon as possible.</I></P><br><br>
                 <form>
                 <div>
                 NAME:<br>
                 <input type="text" name="fname" placeholder="First Name" required>&nbsp;
-                <input type="text" name="lname" placeholder="Last Name" required><br><br><br><br>
+                <input type="text" name="lname" placeholder="Last Name" required><br><br><br>
                 EMAIL:<br>
-                <input type="email" name="email" required><br><br><br><br>
+                <input type="email" name="email" required><br><br><br>
                 LEAVE US A FEW WORDS:<br>
                 <textarea rows="8" cols="100%">
-                </textarea><br><br><br><br><br><br>
+                </textarea><br><br><br>
                 </div>
                 <div style="text-align: center;">
                 <input id="button" type="submit" value="Submit">

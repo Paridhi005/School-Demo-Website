@@ -33,6 +33,35 @@
                 float: left;
             }
 
+            .row
+            {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+            }
+
+            #column1
+            {
+             flex: 47%;
+             padding: 4px;
+            }
+
+            #column2
+            {
+                flex: 47%;
+                border:2px inset pink; 
+                outline: 3px outset white;
+                outline-offset: 1px;
+                color: white; 
+                padding:50px;
+            }
+
+            img
+            {
+                height:100%;
+                width:100%;
+            }
+
             @media screen and (max-width:900px)
             {
 
@@ -57,11 +86,11 @@
                 }
                 
                 .row
-                    {
+                {
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
-                    }
+                }
 
                 .column1,.column2
                 {
@@ -76,7 +105,7 @@
     <body>
         <header>
         <div>
-            <a href="../" target="_blank">
+            <a href="../SRC/index-flex-flex.html" target="_blank">
                 <img src="../RESOURCES/logo-print.png" alt="Yale University Logo" id="logo">
             </a><br><br><br>
             <div>
@@ -84,9 +113,12 @@
             </div>
         </header>
         </div>
-        <div>
+        <div class="row">
+        <div id="column1">
+            <img src="../RESOURCES/Prof.jpg" alt="Professor image">
+        </div>
+        <div id="column2">
         <form method="post">
-        <div style="color: lightblue; padding:50px;">
             Name: <input type="text" name="name" placeholder="first name" required autocomplete autofocus><br><br>
             Surname: <input type="text" name="surname" placeholder="last name" required><br><br>
             Gender: <input type="radio" name="gender" value="Female">Female
@@ -97,12 +129,11 @@
             <option value="Mathematics">Mathematics</option>   
             <option value="Commerce">Commerce</option>
             <option value="Biology">Biology</option> 
-            </select><br><br>
-        </div><br><br> 
+            </select><br><br><br><br>
             <input type="image" src="../RESOURCES/submit.png" height="50px" width="100px" alt="Submit">
             &nbsp;
             <input type="image" src="../RESOURCES/reset.jpeg" height="50px" width="100px" alt="Reset">
-        </form><br><br>
-        <a href="../SRC/index-flex-flex.html">Home</a>
+        </form>
+        </div>
     </body>
 </html>
